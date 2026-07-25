@@ -5,12 +5,14 @@ docno: CW-ABOUT
 
 Civic Workbench is an informal incubator: a handful of people who build
 civic technology projects and write about what they learn. It was founded
-by Jonathan Eyler-Werve in 2016.
+by Jonathan Eyler-Werve in January 2016; its first project, Floodgate,
+was a browser extension built with collaborators from the mental health
+and software engineering fields to let people mute harassment and
+unwanted content on their own terms.
 
-<!-- NEEDS: 2-4 sentences of real origin story beyond the founding fact.
-What prompted it in 2016, and what was the first thing it did? Even one
-concrete detail ("started as a mailing list between former colleagues")
-does more work than a paragraph of positioning. -->
+<!-- NEEDS: confirm the Floodgate-as-first-project framing, and add 1-2
+sentences of what happened between 2016 and now if there's a thread worth
+naming. -->
 
 ## What we pay attention to
 
