@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>The Form Letter Problem — Civic Workbench</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+
+<header class="site-header">
+  <div class="row">
+    <a class="wordmark" href="index.html">Civic Workbench</a>
+    <span class="doc-no">CW-2026-R02</span>
+  </div>
+  <div class="row">
+    <nav class="site-nav" aria-label="Site">
+      <a href="#">About</a>
+      <a href="#">Team</a>
+      <a href="mailto:hello@civicworkbench.com">Contact</a>
+    </nav>
+    <span class="doc-no">hello@civicworkbench.com</span>
+  </div>
+</header>
+
+<div class="dot-strip" aria-hidden="true">░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒░▒▓▒</div>
+
+<main>
+<article>
+  <header class="article-header">
+    <p class="eyebrow">Report</p>
+    <h1>The Form Letter Problem</h1>
+    <p class="dek">What 40,000 near-identical public comments taught us about
+    listening at scale.</p>
+    <p class="byline">Riley Sandoval · June 11, 2026 · 14 min read</p>
+  </header>
+
+  <p>In March, the Federal Docket Management System logged its
+  forty-thousandth comment on a proposed rule about broadband buildout
+  reporting. Reading the docket end to end takes about eleven days. We know
+  because we did it — or rather, we wrote a small pipeline that did, and then
+  we checked its work by hand.</p>
+
+  <p>What we found says less about broadband than about the machinery of
+  public comment itself. The comment period is one of the few places where
+  the public formally touches the administrative state, and it is buckling
+  under exactly the kind of scale that software is supposed to be good at.</p>
+
+  <h2>What the docket actually contained</h2>
+
+  <p>Of 40,806 comments, fewer than seven percent were individually composed.
+  The rest arrived in waves, traceable to a handful of advocacy campaigns
+  whose supporters submitted a suggested text with little or no modification.</p>
+
+  <table>
+    <caption>Comments by source, docket FDMS-2026-0114</caption>
+    <thead>
+      <tr><th scope="col">Source</th><th scope="col" class="num">Count</th><th scope="col" class="num">Share</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Template — single organization</td><td class="num">31,208</td><td class="num">76.5%</td></tr>
+      <tr><td>Template — coalition variants</td><td class="num">5,882</td><td class="num">14.4%</td></tr>
+      <tr><td>Individually written</td><td class="num">2,614</td><td class="num">6.4%</td></tr>
+      <tr><td>Generated, suspected</td><td class="num">1,102</td><td class="num">2.7%</td></tr>
+    </tbody>
+  </table>
+
+  <p>The table understates the clustering. Even within the individually
+  written pool, semantic similarity puts most comments into a dozen argument
+  families. The docket looks like forty thousand voices; it reads like
+  forty.</p>
+
+  <hr class="asterism">
+
+  <h2>Deduplication is a policy choice</h2>
+
+  <p>The standard technical response is to deduplicate: collapse the copies,
+  count the originals, move on. Our pipeline does this in a few lines.</p>
+
+<pre><code><span class="code-kw">import</span> hashlib, re
+
+<span class="code-kw">def</span> fingerprint(comment: <span class="code-kw">str</span>) -&gt; <span class="code-kw">str</span>:
+    <span class="code-comment">"""Cluster near-duplicates: collapse whitespace, strip
+    salutations and signatures, hash the remainder."""</span>
+    body = re.sub(<span class="code-str">r"\s+"</span>, <span class="code-str">" "</span>, comment.lower())
+    body = re.sub(<span class="code-str">r"^(dear|to whom).*?[,:]"</span>, <span class="code-str">""</span>, body)
+    <span class="code-kw">return</span> hashlib.sha256(body.encode()).hexdigest()[:12]</code></pre>
+
+  <p>But where you draw the line between <em>same comment</em> and
+  <em>different comment</em> is not a technical parameter. Strip too little
+  and a campaign looks like a groundswell of independent writing. Strip too
+  much and you erase the one paragraph a retired line worker added about her
+  county's actual coverage map — the paragraph that was, for this docket, the
+  single most useful sentence an agency received.</p>
+
+  <aside class="callout">
+    <p>A form letter is not noise. It is a signature on someone else's
+    sentence — and signatures are data.</p>
+  </aside>
+
+  <h2>What agencies could do instead</h2>
+
+  <p>Treat the campaign and the annotation as different objects. Count the
+  signatures as what they are — a petition — and route the added paragraphs
+  to reviewers as what <em>they</em> are: testimony. The tooling for this
+  split is not exotic; most of it is the fingerprint function above plus a
+  diff against the template.</p>
+
+  <p>We are publishing the pipeline, a labeled sample of the docket, and a
+  short methods note. If you work on comment systems — inside government or
+  outside — we would like to compare results.</p>
+
+  <hr class="asterism">
+
+  <p>Thanks to the docket clerks who answered patient questions about
+  submission timestamps, and to three reviewers for close reads of the
+  clustering methodology.</p>
+</article>
+</main>
+
+<footer class="site-footer">
+  <span>Prototype — all content is placeholder fiction.</span>
+  <span><a href="#">rss</a> · est. 2016</span>
+</footer>
+
+</div>
+</body>
+</html>
