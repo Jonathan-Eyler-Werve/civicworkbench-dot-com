@@ -4,39 +4,27 @@ docno: CW-ABOUT
 ---
 
 Civic Workbench is an informal incubator: a handful of people who build
-civic technology projects and write about what they learn. It was founded
-by Jonathan Eyler-Werve in January 2016; its first project, Floodgate,
-was a browser extension built with collaborators from the mental health
-and software engineering fields to let people mute harassment and
-unwanted content on their own terms.
-
-<!-- NEEDS: confirm the Floodgate-as-first-project framing, and add 1-2
-sentences of what happened between 2016 and now if there's a thread worth
-naming. -->
+civic technology projects and write about what they learn. Occasionally active since 2016.
 
 ## What we pay attention to
 
 Our projects and writing cluster around a set of durable interests:
 
-- **Data science** — <!-- NEEDS: one clause on the angle, e.g. what kind of civic data work -->
-- **Language models** — <!-- NEEDS: one clause -->
-- **Social media** — <!-- NEEDS: one clause -->
-- **The open web and open standards** — <!-- NEEDS: one clause -->
-- **Tech harm reduction** — <!-- NEEDS: one clause -->
+- **Civic data and related plumbing**
+- **Natural language problems**
+- **Social media and democracy**
+- **The open web and open standards**
+- **Externalities and harm reduction**
 
-<!-- NEEDS: confirm this is the right interest list — it comes from your
-step-3 description ("data science, language models, social media, open
-web, open standards, tech harm reduction, and other topics"). The "one
-clause" asks are optional; a bare list is also fine and quieter. -->
+## Friends and neighbors
 
-## How it works
+- [Unbreaking.org](https://unbreaking.org/)
+- [Maryland Digital Service](https://doit.maryland.gov/About-DoIT/Offices/Maryland-Digital-Service/Pages/default.aspx)
+- [Labs Practices](https://labspractices.com/)
+- [Pivotal Labs alumni slack](https://pivotal.fun/)
 
-<!-- NEEDS: 2-3 honest sentences on the operating model. The content
-strategy says "informal" and "minimally maintained as a signal" — e.g.:
-projects are member-initiated, there is no funding relationship implied by
-appearing here, things get archived when done rather than abandoned.
-Whatever is actually true. -->
+## Event series we like
 
-Projects appear here when they are real enough to describe, and are marked
-archived when their work is done. Writing appears when there is something
-worth saying.
+- [Chi Hack Night](https://chihacknight.org/)
+- [Agent Loop — Chicago](https://luma.com/agent-loop)
+- [Chicago LangChain meetup](https://luma.com/chicago-langchain-meetup)
