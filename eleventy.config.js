@@ -5,6 +5,7 @@ const STATUS_ORDER = { active: 0, pilot: 1, archived: 2 };
 
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ assets: "assets" });
+  eleventyConfig.addPassthroughCopy({ "public/robots.txt": "robots.txt" });
   eleventyConfig.ignores.add("content/README.md");
 
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
@@ -33,6 +34,10 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("limit", (list, count) => list.slice(0, count));
 
   eleventyConfig.addFilter("domain", (url) => new URL(url).hostname);
+
+  eleventyConfig.addFilter("dateISO", (dateValue) =>
+    new Date(dateValue).toISOString().slice(0, 10)
+  );
 
   eleventyConfig.addFilter("dateDisplay", (dateValue) =>
     new Date(dateValue).toLocaleDateString("en-US", {
