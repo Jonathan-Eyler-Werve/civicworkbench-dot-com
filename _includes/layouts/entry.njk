@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+---
+<article class="prose entry">
+  <header class="article-header">
+    <p class="eyebrow">{{ kind }}</p>
+    <h1>{{ title }}</h1>
+    {% if dek %}<p class="dek">{{ dek }}</p>{% endif %}
+    <p class="byline">{% if author %}{{ author }} · {% endif %}{{ page.date | dateDisplay }}</p>
+  </header>
+  {{ content | safe }}
+</article>
