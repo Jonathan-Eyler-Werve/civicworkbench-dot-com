@@ -16,13 +16,16 @@
   --blue-600: #205ea6;
   --blue-400: #4385be;
   --red-600: #af3029;
+  --red-500: #c03e35;
   --red-400: #d14d41;
+  --red-300: #e8705f;
   --bg: light-dark(var(--paper), var(--ink));
   --fg: light-dark(var(--ink), var(--base-200));
   --muted: light-dark(var(--base-600), var(--base-500));
   --rule: light-dark(var(--base-100), var(--base-900));
   --accent: light-dark(var(--blue-600), var(--blue-400));
   --accent-warm: light-dark(var(--red-600), var(--red-400));
+  --hover-warm: light-dark(var(--red-500), var(--red-300));
   --serif: "Charter", "Bitstream Charter", "Sitka Text", "Cambria", "Georgia", serif;
   --mono: ui-monospace, "Cascadia Code", "Source Code Pro", "Menlo", "Consolas", monospace;
   --text: clamp(1.1875rem, 1.05rem + 0.45vw, 1.3125rem);
@@ -58,7 +61,7 @@ a {
 }
 
 a:hover {
-  color: var(--accent-warm);
+  color: var(--hover-warm);
 }
 
 :focus-visible {
@@ -96,7 +99,7 @@ a:hover {
 }
 
 .wordmark:hover {
-  color: var(--accent-warm);
+  color: var(--hover-warm);
 }
 
 .doc-no {
@@ -121,7 +124,7 @@ a:hover {
 }
 
 .site-nav a:hover {
-  color: var(--accent-warm);
+  color: var(--hover-warm);
 }
 
 /* Landing intro: the statement is the page's h1 */
@@ -150,7 +153,7 @@ a:hover {
 }
 
 .home-intro p a:hover {
-  color: var(--accent-warm);
+  color: var(--hover-warm);
 }
 
 /* Section labels */
@@ -211,7 +214,7 @@ a:hover {
 }
 
 .stream h3 a:hover {
-  color: var(--accent-warm);
+  color: var(--hover-warm);
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
@@ -243,7 +246,7 @@ a:hover {
 }
 
 .projects .name a:hover {
-  color: var(--accent-warm);
+  color: var(--hover-warm);
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
@@ -302,7 +305,7 @@ a:hover {
 }
 
 .project-meta a:hover {
-  color: var(--accent-warm);
+  color: var(--hover-warm);
 }
 
 /* Page + article headers */
