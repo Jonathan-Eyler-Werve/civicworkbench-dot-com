@@ -24,9 +24,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      # pathPrefix serves the site at /civicworkbench-dot-com/ on the
-      # github.io staging URL; remove the flag at DNS cutover.
-      - run: npx @11ty/eleventy --pathprefix=/civicworkbench-dot-com/
+      - run: npx @11ty/eleventy
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
