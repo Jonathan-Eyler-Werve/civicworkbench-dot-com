@@ -23,8 +23,9 @@ Our projects and writing cluster around a set of durable interests:
 - [Labs Practices](https://labspractices.com/)
 - [Pivotal Labs alumni slack](https://pivotal.fun/)
 
-## Event series we like
+## Events we like
 
 - [Chi Hack Night](https://chihacknight.org/)
 - [Agent Loop — Chicago](https://luma.com/agent-loop)
 - [Chicago LangChain meetup](https://luma.com/chicago-langchain-meetup)
+- [Code For America Summit](https://summit.codeforamerica.org/)
