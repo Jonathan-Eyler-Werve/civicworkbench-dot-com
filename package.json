@@ -6,10 +6,27 @@
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve",
-    "build:staging": "eleventy --pathprefix=/civicworkbench-dot-com/"
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint:md": "markdownlint-cli2",
+    "lint:css": "stylelint \"assets/**/*.css\"",
+    "spell": "cspell --no-progress \"content/**/*.md\" \"README.md\"",
+    "validate:html": "html-validate \"_site/**/*.html\"",
+    "audit": "npm audit --audit-level=moderate",
+    "serve:dist": "python3 -m http.server 8083 --directory _site",
+    "a11y": "start-server-and-test \"npm run serve:dist\" 8083 \"bash ./scripts/a11y.sh 8083\"",
+    "check": "npm run format:check && npm run lint:md && npm run lint:css && npm run spell"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-plugin-rss": "^2.0.2"
+    "@11ty/eleventy-plugin-rss": "^2.0.2",
+    "cspell": "^9.8.0",
+    "html-validate": "^10.9.0",
+    "markdownlint-cli2": "^0.22.1",
+    "pa11y-ci": "^4.1.1",
+    "prettier": "^3.8.3",
+    "start-server-and-test": "^3.0.5",
+    "stylelint": "^17.11.1",
+    "stylelint-config-standard": "^40.0.0"
   }
 }

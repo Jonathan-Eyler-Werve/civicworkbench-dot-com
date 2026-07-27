@@ -1,0 +1,16 @@
+{
+	"config": {
+		"default": true,
+		"MD001": false,
+		"MD003": false,
+		"MD010": { "code_blocks": false },
+		"MD013": false,
+		"MD024": { "siblings_only": true },
+		"MD033": false,
+		"MD040": false,
+		"MD041": false,
+		"MD045": false,
+	},
+	"globs": ["content/**/*.md", "README.md"],
+	"ignores": ["node_modules/**", "_site/**", "prototypes/**", "references/**"],
+}

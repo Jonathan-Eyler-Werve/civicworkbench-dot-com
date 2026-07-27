@@ -1,0 +1,33 @@
+{
+	"version": "0.2",
+	"language": "en",
+	"words": [
+		"Austen",
+		"Bluehost",
+		"chihacknight",
+		"civicworkbench",
+		"docno",
+		"Eleventy",
+		"ericmikkelsen",
+		"Eyler",
+		"eylerwerve",
+		"Flexoki",
+		"IAAP",
+		"LangChain",
+		"labspractices",
+		"Luma",
+		"Markov",
+		"Mikkelsen",
+		"Nunjucks",
+		"USWDS",
+		"WCAG",
+		"Werve"
+	],
+	"ignorePaths": [
+		"node_modules/**",
+		"_site/**",
+		"package-lock.json",
+		"prototypes/**",
+		".playwright-mcp/**"
+	]
+}
