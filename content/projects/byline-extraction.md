@@ -22,8 +22,5 @@ It runs as a TypeScript CLI feeding a Google Sheet through an
 authenticated Apps Script webhook, which keeps the collaboration surface
 as simple as a spreadsheet.
 
-<!-- NEEDS: the repo is currently PRIVATE, so the public site cannot link
-it yet. Either make it public before launch or drop the repo link from
-the frontmatter. -->
 <!-- NEEDS REVIEW: description drafted from the repo README; confirm the
 framing ("fixes that", "deliberately polite") matches how you'd pitch it. -->
