@@ -211,7 +211,9 @@ a:hover {
 }
 
 .stream h3 a:hover {
-  color: var(--accent);
+  color: var(--accent-warm);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 
 .entry-meta {
@@ -241,7 +243,7 @@ a:hover {
 }
 
 .projects .name a:hover {
-  color: var(--accent);
+  color: var(--accent-warm);
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
