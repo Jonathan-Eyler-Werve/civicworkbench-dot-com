@@ -29,7 +29,7 @@ layout: layouts/base.njk
   <ul class="projects">
     {%- for project in collections.projectsSorted %}
     <li>
-      <span class="name">{% if project.data.repo %}<a href="{{ project.data.repo }}">{{ project.data.name }}</a>{% else %}{{ project.data.name }}{% endif %}</span>
+      <span class="name"><a href="/projects/#{{ project.fileSlug }}">{{ project.data.name }}</a></span>
       — {{ project.data.blurb }}
       <span class="status {{ project.data.status }}">{{ project.data.status }}</span>
     </li>

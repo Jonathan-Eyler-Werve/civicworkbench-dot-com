@@ -263,6 +263,29 @@ a:hover {
   border-color: currentcolor;
 }
 
+/* Project sections on /projects/ */
+.project {
+  border-top: 1px solid var(--rule);
+  padding-top: 1.8rem;
+  margin-top: 2.4rem;
+  scroll-margin-top: 1.5rem;
+}
+
+.project h2 {
+  margin-block: 0 0.2rem;
+}
+
+.project .status {
+  vertical-align: 0.35em;
+}
+
+.project-meta {
+  font-family: var(--mono);
+  font-size: var(--text-sm);
+  color: var(--muted);
+  margin-bottom: 1.1rem;
+}
+
 /* Page + article headers */
 .page-header {
   padding-block: clamp(2.5rem, 7vh, 4rem) 0;

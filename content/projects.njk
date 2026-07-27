@@ -1,0 +1,21 @@
+---
+title: Projects
+docno: CW-PROJECTS
+layout: layouts/base.njk
+---
+
+<article class="prose page">
+  <header class="page-header">
+    <h1>Projects</h1>
+  </header>
+  {%- for project in collections.projectsSorted %}
+  <section class="project" id="{{ project.fileSlug }}">
+    <h2>
+      {{ project.data.name }}
+      <span class="status {{ project.data.status }}">{{ project.data.status }}</span>
+    </h2>
+    <p class="project-meta">led by {{ project.data.lead }}</p>
+    {{ project.templateContent | safe }}
+  </section>
+  {%- endfor %}
+</article>
