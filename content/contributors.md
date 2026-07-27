@@ -3,8 +3,6 @@ title: Contributors
 docno: CW-CONTRIBUTORS
 ---
 
-Civic Workbench is a handful of people.
-
 ## Jonathan Eyler-Werve
 
 Founder of Civic Workbench. Twenty-plus years launching products across

@@ -20,4 +20,4 @@ harassment, and later into newsfeed-quality data science work that
 shipped commercially in 2017.
 
 Forked from "Pride, Prejudice, Dungeons, and Dragons" by
-[LindseyB](https://github.com/LindseyB); built in 2015, archived since.
+[LindseyB](https://github.com/LindseyB).

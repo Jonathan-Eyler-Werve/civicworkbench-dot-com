@@ -11,6 +11,3 @@ unreachable during sleep hours. Built in 2016, in the same
 harm-reduction spirit as Floodgate — the user sets the rule, the browser
 enforces it, and no platform's cooperation is required.
 
-<!-- NEEDS REVIEW: the repo README is minimal, so this is written from
-the repo description and its sleep-research topic tags. Correct or
-expand if there's more story here. -->
