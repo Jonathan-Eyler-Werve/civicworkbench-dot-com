@@ -2,7 +2,7 @@
 name: Nope Nope Nope
 status: archived
 blurb: A Chrome extension that blocks social networks during sleep hours.
-repo: https://github.com/Jonathan-Eyler-Werve/nope-nope-nope
+github: https://github.com/Jonathan-Eyler-Werve/nope-nope-nope
 lead: Jonathan Eyler-Werve
 ---
 

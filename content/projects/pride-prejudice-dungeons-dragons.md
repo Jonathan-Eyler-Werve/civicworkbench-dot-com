@@ -3,7 +3,7 @@ name: Pride, Prejudice, Dungeons & Dragons
 status: archived
 blurb: A Markov text mixer that mashes any set of source texts into
   generated sentences — Austen and the Monster Manual included.
-repo: https://github.com/Jonathan-Eyler-Werve/pride-prejudice-dungeons-dragons
+github: https://github.com/Jonathan-Eyler-Werve/pride-prejudice-dungeons-dragons
 lead: Jonathan Eyler-Werve
 ---
 

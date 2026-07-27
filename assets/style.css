@@ -286,6 +286,14 @@ a:hover {
   margin-bottom: 1.1rem;
 }
 
+.project-meta a {
+  color: var(--muted);
+}
+
+.project-meta a:hover {
+  color: var(--accent-warm);
+}
+
 /* Page + article headers */
 .page-header {
   padding-block: clamp(2.5rem, 7vh, 4rem) 0;

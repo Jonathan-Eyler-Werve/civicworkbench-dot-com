@@ -3,7 +3,7 @@ name: Emotional Metadata
 status: archived
 blurb: A Gmail extension embedding the author's self-reported context in
   emails, to make text-only communication less damaging.
-repo: https://github.com/Jonathan-Eyler-Werve/emotional-metadata
+github: https://github.com/Jonathan-Eyler-Werve/emotional-metadata
 lead: Jonathan Eyler-Werve
 ---
 

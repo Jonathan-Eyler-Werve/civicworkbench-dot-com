@@ -3,7 +3,8 @@ name: Colors.fyi
 status: active
 blurb: A directory of every color that meets WCAG AA contrast on both black
   and white — dependable color data for accessible design.
-repo: https://colors.fyi
+site: https://colors.fyi
+github: https://github.com/ericmikkelsen/colors.fyi-11ty
 lead: Eric Mikkelsen
 ---
 

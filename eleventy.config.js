@@ -32,6 +32,8 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("limit", (list, count) => list.slice(0, count));
 
+  eleventyConfig.addFilter("domain", (url) => new URL(url).hostname);
+
   eleventyConfig.addFilter("dateDisplay", (dateValue) =>
     new Date(dateValue).toLocaleDateString("en-US", {
       year: "numeric",

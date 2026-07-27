@@ -3,7 +3,8 @@ name: Bus.fyi
 status: active
 blurb: The schedule for every CTA bus stop and train station — no app, no
   tracking, fast on any connection.
-repo: https://bus.fyi
+site: https://bus.fyi
+github: https://github.com/ericmikkelsen/bus-fyi-app
 lead: Eric Mikkelsen
 ---
 

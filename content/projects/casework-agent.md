@@ -3,7 +3,7 @@ name: Case Overview Agent
 status: pilot
 blurb: A coordination layer for benefits caseworkers — one assistant across
   the tools they already use, driven from workplace chat.
-repo: https://github.com/Jonathan-Eyler-Werve/casework-agent
+github: https://github.com/Jonathan-Eyler-Werve/casework-agent
 lead: Jonathan Eyler-Werve
 ---
 

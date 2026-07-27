@@ -14,7 +14,11 @@ layout: layouts/base.njk
       {{ project.data.name }}
       <span class="status {{ project.data.status }}">{{ project.data.status }}</span>
     </h2>
-    <p class="project-meta">led by {{ project.data.lead }}</p>
+    <p class="project-meta">
+      led by {{ project.data.lead }}
+      {%- if project.data.site %} · <a href="{{ project.data.site }}">{{ project.data.site | domain }}</a>{% endif %}
+      {%- if project.data.github %} · <a href="{{ project.data.github }}">github</a>{% endif %}
+    </p>
     {{ project.templateContent | safe }}
   </section>
   {%- endfor %}

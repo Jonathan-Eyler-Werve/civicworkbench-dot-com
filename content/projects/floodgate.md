@@ -3,7 +3,7 @@ name: Floodgate
 status: archived
 blurb: A browser extension letting people mute unwanted content across the
   web — filtering by their own rules, no platform permission required.
-repo: https://github.com/Jonathan-Eyler-Werve/floodgate
+github: https://github.com/Jonathan-Eyler-Werve/floodgate
 lead: Jonathan Eyler-Werve
 ---
 

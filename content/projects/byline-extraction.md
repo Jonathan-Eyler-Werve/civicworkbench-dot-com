@@ -3,7 +3,7 @@ name: Byline Extraction
 status: active
 blurb: Extracts author bylines from news articles so aggregators can credit
   the people who did the reporting.
-repo: https://github.com/Jonathan-Eyler-Werve/byline-extraction
+github: https://github.com/Jonathan-Eyler-Werve/byline-extraction
 lead: Jonathan Eyler-Werve
 ---
 

@@ -6,6 +6,12 @@ docno: CW-ABOUT
 Civic Workbench is an informal incubator: a handful of people who build
 civic technology projects and write about what they learn. Occasionally active since 2016.
 
+## Contact
+
+Jonathan Eyler-Werve\
+jonathan@eylerwerve.com\
+Chicago, Illinois
+
 ## What we pay attention to
 
 Our projects and writing cluster around a set of durable interests:
