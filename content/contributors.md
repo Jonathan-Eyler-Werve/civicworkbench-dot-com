@@ -24,12 +24,3 @@ accessibility, performance, and being a decent human being.
 
 [ericmikkelsen.com](https://ericmikkelsen.com) ·
 [LinkedIn](https://www.linkedin.com/in/eric-mikkelsen/)
-
-<!-- NEEDS REVIEW: both bios are drafted from public sources
-(eylerwerve.com, ericmikkelsen.com, LinkedIn search snippets) and need
-sign-off from the people they describe. Notes:
-- Jonathan: current employer deliberately omitted — add if wanted.
-- Eric: "being a decent human being" adapts his own site's phrasing;
-  confirm he's happy having it echoed here.
-- Surname spelled Mikkelsen per ericmikkelsen.com (prompt said Mikkelson,
-  URL said mikkelsen). -->
