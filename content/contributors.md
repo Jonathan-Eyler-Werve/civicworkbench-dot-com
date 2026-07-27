@@ -1,6 +1,6 @@
 ---
-title: Team
-docno: CW-TEAM
+title: Contributors
+docno: CW-CONTRIBUTORS
 ---
 
 Civic Workbench is a handful of people. Projects are individually led;
