@@ -263,10 +263,12 @@ a:hover {
   border-color: currentcolor;
 }
 
-/* Markdown pages (about, contributors): h2 sections ruled like projects */
+/* Markdown pages (about, contributors): h2 sections ruled like projects.
+   padding-top equals the project sections' effective rule-to-heading gap
+   (1.8rem section padding + 2.4rem h2 margin). */
 .page > h2 {
   border-top: 1px solid var(--rule);
-  padding-top: 1.8rem;
+  padding-top: 4.2rem;
   margin-top: 2.4rem;
 }
 
