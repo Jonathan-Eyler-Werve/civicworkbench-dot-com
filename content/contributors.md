@@ -3,8 +3,7 @@ title: Contributors
 docno: CW-CONTRIBUTORS
 ---
 
-Civic Workbench is a handful of people. Projects are individually led;
-writing is individually bylined.
+Civic Workbench is a handful of people.
 
 ## Jonathan Eyler-Werve
 
