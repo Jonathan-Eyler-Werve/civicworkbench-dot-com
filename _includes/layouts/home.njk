@@ -10,7 +10,7 @@ layout: layouts/base.njk
 <section aria-labelledby="writing-label">
   <h2 class="section-label" id="writing-label">Writing &amp; notes</h2>
   <ul class="stream">
-    {% for post in entries | limit(5) %}
+    {%- for post in entries | limit(5) %}
     <li>
       <time datetime="{{ post.date.toISOString() | slice(0, 10) }}">{{ post.date | dateShort }}</time>
       <div>
@@ -18,7 +18,7 @@ layout: layouts/base.njk
         <p class="entry-meta">{{ post.data.kind | title }}{% if post.data.author %} · {{ post.data.author }}{% endif %}</p>
       </div>
     </li>
-    {% endfor %}
+    {%- endfor %}
   </ul>
 </section>
 {% endif %}
@@ -27,13 +27,13 @@ layout: layouts/base.njk
 <section aria-labelledby="projects-label">
   <h2 class="section-label" id="projects-label">Projects</h2>
   <ul class="projects">
-    {% for project in collections.projectsSorted %}
+    {%- for project in collections.projectsSorted %}
     <li>
       <span class="name">{% if project.data.repo %}<a href="{{ project.data.repo }}">{{ project.data.name }}</a>{% else %}{{ project.data.name }}{% endif %}</span>
       — {{ project.data.blurb }}
       <span class="status {{ project.data.status }}">{{ project.data.status }}</span>
     </li>
-    {% endfor %}
+    {%- endfor %}
   </ul>
 </section>
 {% endif %}

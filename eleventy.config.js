@@ -25,8 +25,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addCollection("projectsSorted", (collectionApi) =>
     collectionApi.getFilteredByTag("project").sort((first, second) => {
       const rankDiff =
-        (STATUS_ORDER[first.data.status] ?? 9) -
-        (STATUS_ORDER[second.data.status] ?? 9);
+        (STATUS_ORDER[first.data.status] ?? 9) - (STATUS_ORDER[second.data.status] ?? 9);
       return rankDiff || first.data.name.localeCompare(second.data.name);
     })
   );

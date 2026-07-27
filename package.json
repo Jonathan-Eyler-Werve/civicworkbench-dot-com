@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "eleventy",
+    "build": "rm -rf _site && eleventy",
     "serve": "eleventy --serve",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
